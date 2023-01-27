@@ -9,5 +9,11 @@ def partition(numbers, left, right):
     j = right - 1
     pivot = numbers[right]
 
+    while i < j:
+        while i < right and numbers[i] < pivot:
+            i += 1
+        while j > left and numbers[j] >= pivot:
+            j -= 1
+
 
 
