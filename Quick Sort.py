@@ -5,5 +5,9 @@ def quicksort(numbers, left, right):
         quicksort(numbers, partition_pos + 1, right)
 
 def partition(numbers, left, right):
+    i = left
+    j = right - 1
+    pivot = numbers[right]
+
 
 
