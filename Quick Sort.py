@@ -19,10 +19,18 @@ def partition(numbers, left, right):
             numbers[i], numbers[j] = numbers[j], numbers[i]
             print("\t\t\t ", numbers)
 
-        if numbers[i] > pivot:
-            numbers[i], numbers[right] = numbers[right], numbers[i]
-            print("\t\t\t ", numbers)
-        return i
+    if numbers[i] > pivot:
+        numbers[i], numbers[right] = numbers[right], numbers[i]
+        print("\t\t\t ", numbers)
+    return i
 
+mylist = [97, 23, 100, 88, 66, 84, 7, 21, 52, 17]
+print("\n-------------------------------------------------------------------------")
+print("This is my list: ", mylist)
+print("-------------------------------------------------------------------------\n")
+quicksort(mylist, 0, len(mylist) - 1)
+print("\n-------------------------------------------------------------------------")
+print("New list after quick sort: ", mylist)
+print("-------------------------------------------------------------------------")
 
 
