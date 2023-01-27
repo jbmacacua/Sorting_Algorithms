@@ -7,3 +7,4 @@ for element in range (len(mylist)):
     min_index = mylist.index(min_value)
     mylist[element], mylist[min_index] = mylist[min_index], mylist[element]
 print("New list after selection sort: ", mylist)
+

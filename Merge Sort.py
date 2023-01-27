@@ -23,3 +23,8 @@ def merge_sort(elements):
                 elements[merge_idx] = left_elements[left_idx]
                 left_idx += 1
                 merge_idx += 1
+
+            while right_idx < len(right_elements):
+                elements[merge_idx] = right_elements[right_idx]
+                right_idx += 1
+                merge_idx += 1
