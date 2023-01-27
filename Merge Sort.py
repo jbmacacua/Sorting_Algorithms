@@ -19,12 +19,22 @@ def merge_sort(elements):
                 right_idx += 1
             merge_idx += 1
 
-            while left_idx < len(left_elements):
-                elements[merge_idx] = left_elements[left_idx]
-                left_idx += 1
-                merge_idx += 1
+        while left_idx < len(left_elements):
+            elements[merge_idx] = left_elements[left_idx]
+            left_idx += 1
+            merge_idx += 1
 
-            while right_idx < len(right_elements):
-                elements[merge_idx] = right_elements[right_idx]
-                right_idx += 1
-                merge_idx += 1
+        while right_idx < len(right_elements):
+            elements[merge_idx] = right_elements[right_idx]
+            right_idx += 1
+            merge_idx += 1
+
+
+mylist = [97, 23, 100, 88, 66, 84, 7, 21, 52, 17]
+print("\n-------------------------------------------------------------------------")
+print("This is my list: ", mylist)
+print("-------------------------------------------------------------------------\n")
+merge_sort(mylist)
+print("\n-------------------------------------------------------------------------")
+print("New list after merge sort: ", mylist)
+print("-------------------------------------------------------------------------")
